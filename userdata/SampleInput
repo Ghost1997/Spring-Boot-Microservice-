@@ -1,0 +1,58 @@
+localhost:8080/info/createUser
+create user{
+	"id": "5"
+	"username": "ghost",
+	"status":"active",
+	"firstName":"sujit",
+	"lastName":"kumar",
+	"createdBy":"1",
+	"lastModifiedBy":"1",
+	"email":"sujit@gmail.com"
+	
+}
+
+localhost:8080/updateUser/{5}
+Update user{
+	"id": "5"
+	"username": "ghost",
+	"status":"active",
+	"firstName":"gourav",
+	"lastName":"singh",
+	"createdBy":"1",
+	"lastModifiedBy":"1",
+	"email":"gourav@gmail.com"
+	
+}
+
+Get Account
+localhost:8080/info/getUser/5/gourav@gmail.com
+
+Delete Account
+localhost:8080/info/deleteUser/5
+
+localhost:8080/info/createAccount
+create account
+{
+    "lastModifiedBy": "1",
+    "accountName": "SBI",
+    "createdBy": "1",
+    "owner":"5",
+    "id" : "1005"
+}
+
+localhost:8080/info/updateAcount/{1005}
+Update account
+{
+    "lastModifiedBy": "1",
+    "accountName": "PNB",
+    "createdBy": "1",
+    "owner":"5",
+    "id" : "1005"
+}
+
+Get Account
+localhost:8080/info/getAccount/1005/5
+
+Delete Account
+localhost:8080/info/deleteAccount/5
+
